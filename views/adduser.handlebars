@@ -1,0 +1,32 @@
+<div class="jumbotron">
+    <h1> ADD USERS</h1>
+    {{#if error}} <span>{{error}}</span> {{/if}}
+     {{#if message}} <span class="btn-success">{{error}}</span> {{/if}}
+    <form action="/users/add" class="for-inline" method="POST">
+
+    <div class="form-group">
+        <label for="id">ID</label>
+        <input type="text" class="form-control" name="id" class="id" placeholder="ID">
+    </div>
+    
+    <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" name="firstName" class="id" placeholder="First Name">
+    </div>
+
+     <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" name="lastName" class="lastName" placeholder="Last Name">
+    </div>
+
+         <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" name="email" class="email" placeholder="email address">
+    </div>
+
+    <input type="submit" class="btn btn-primary" value="Add User">
+    <a href="/" class="btn btn-danger"> BACK</a>
+
+
+    </form>
+</div>

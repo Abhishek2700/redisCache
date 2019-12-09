@@ -1,0 +1,16 @@
+<div class="jumbotron">
+    <h1> SEARCH USERS</h1>
+    {{#if error}} <span>{{error}}</span> {{/if}}
+    <form action="/users/search" class="for-inline" method="POST">
+
+    <div class="form-group">
+        <input type="text" class="form-control" name="id" placeholder="Search Users">
+    </div>
+
+    <input type="submit" class="btn btn-primary" value="Search">
+
+
+    </form>
+
+ 
+</div>
